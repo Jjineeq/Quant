@@ -20,12 +20,14 @@ The format of the data input is the same as that in :ref:`expected-returns`.
 
 - covariance to correlation matrix
 """
+import sys
+sys.path.append("C:/Users/user/github/Quant/PyPortfolioOpt-master/pypfopt/")
+sys.path.append("C:/Users/user/github/Quant/PyPortfolioOpt-master/pypfopt/efficient_frontier/")
 
 import warnings
 import numpy as np
 import pandas as pd
-#from .expected_returns import returns_from_prices
-
+from expected_returns import returns_from_prices
 
 def _is_positive_semidefinite(matrix):
     """
